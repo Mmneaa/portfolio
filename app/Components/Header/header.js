@@ -60,20 +60,3 @@ export default function Header() {
     </header>
   );
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  const toggleButton = document.querySelector(".toggleButton");
-  const nav = document.querySelector(".nav");
-
-  if (toggleButton && nav) {
-    toggleButton.addEventListener("click", () => {
-      nav.classList.toggle("open");
-    });
-  }
-
-  // Example of checking parentNode
-  const someElement = document.querySelector(".some-element");
-  if (someElement && someElement.parentNode) {
-    // Perform operations on someElement.parentNode
-  }
-});
