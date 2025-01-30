@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Introduction() {
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id="introduction">
       <div className={styles.content}>
         <div className={styles.imageContainer}>
           <Image
