@@ -1,9 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Mahmoud Nabil - Front-End Engineer",
-  description:
-    "Portfolio of Mahmoud Nabil, a passionate Junior Front-End Engineer.",
+  title: "Mahmoud Nabil - Full-Stack Web Developer",
+  description: "A minimalistic portfolio for personal use.",
 };
 
 export default function Layout({ children }) {
