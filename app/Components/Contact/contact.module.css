@@ -1,0 +1,56 @@
+.contact {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.content {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.table {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.table a {
+    color: #0070f3;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.table a:hover {
+    text-decoration: underline;
+}
+
+/* Dark mode styles */
+body.dark-mode .table td {
+    border-bottom: 1px solid #666;
+}
+
+body.dark-mode .table a {
+    color: #4dabf7;
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    .table {
+        max-width: 100%;
+    }
+}

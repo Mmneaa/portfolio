@@ -1,0 +1,52 @@
+/* Default light mode */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: url('/background-light.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* System preference for dark mode */
+@media (prefers-color-scheme: dark) {
+  body:not(.light-mode) {
+    background: url('/background-dark.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+  }
+}
+
+/* Manual dark mode */
+body.dark-mode {
+  background: url('/background-dark.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+/* Manual light mode */
+body.light-mode {
+  background: url('/background-light.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+/* Blurred effect for sections */
+section {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 20px;
+  margin: 1rem;
+}
+
+body.dark-mode section {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not(.light-mode) section {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}

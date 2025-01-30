@@ -1,0 +1,86 @@
+.hero {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    padding-top: 10vh;
+    padding-bottom: 12vh;
+    /* Added padding-top to account for header height */
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    /* Circular image */
+}
+
+.textContainer {
+    flex: 1;
+    text-align: left;
+}
+
+.textContainer h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.textContainer p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.icons a {
+    color: inherit;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.icons a:hover {
+    color: #0070f3;
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    .hero {
+        margin-top: 12vh;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imageContainer {
+        justify-content: center;
+    }
+
+    .textContainer {
+        text-align: center;
+    }
+
+    .icons {
+        justify-content: center;
+        align-items: center;
+    }
+}

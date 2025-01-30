@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  /* Placeholder for blur */
+  color: white;
+  /* Text color change */
+}
+
+.blurContainer {
+  width: 90%;
+  max-width: 1200px;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensuring labels and secondary elements have stronger blur */
+.label {
+  backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.stripes {
+  display: flex;
+  height: 10px;
+  margin-top: 1rem;
+}
+
+.stripered {
+  flex: 1;
+  background-color: red;
+}
+
+.stripepurple {
+  flex: 1;
+  background-color: purple;
+}
